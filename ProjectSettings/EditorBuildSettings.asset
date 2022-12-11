@@ -5,8 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/[Scenes]/Main Game.unity
+    guid: bff2fa031736ff74d87735f9af171068
+  - enabled: 1
+    path: Assets/[Scenes]/SampleScene.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/[Scenes]/Instruction.unity
+    guid: 8f664574af971ef42a26f60247c410da
+  - enabled: 1
+    path: Assets/[Scenes]/Game Over.unity
+    guid: 8b2f2cb52f0d7e44a945c91f56e6755c
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 9dd60a1bb2342884182683fa091f695b, type: 2}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// DeathPlaneController.cs
@@ -26,6 +27,10 @@ public class DeathPlaneController : MonoBehaviour
         {
             ReSpawn(collision.gameObject);
             health.TakeDamage(10);
+            if(health.value <= 0)
+            {
+                SceneManager.LoadScene("Game Over");
+            }
         }
     }
 

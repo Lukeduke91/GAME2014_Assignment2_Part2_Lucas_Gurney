@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// PlayerBehaviour.cs
@@ -101,6 +102,10 @@ public class PlayerBehaviour : MonoBehaviour
         if(collision.gameObject.CompareTag("Enemy"))
         {
             health.TakeDamage(20);
+            if(health.value <= 0)
+            {
+                SceneManager.LoadScene("Game Over");
+            }
         }
     }
 }
