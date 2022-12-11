@@ -6,7 +6,7 @@ using UnityEngine;
 /// PlayerBehaviour.cs
 /// Lucas Gurney
 /// 101313633
-/// November 19, 2022
+/// December 11, 2022
 /// Used for the players behaviour to move around
 /// Made the player behaviour
 /// </summary>
@@ -23,11 +23,24 @@ public class PlayerBehaviour : MonoBehaviour
     public LayerMask groundLayerMask;
     public bool isGrounded;
 
+    public HealthBarController health;
+
     private Rigidbody2D rigidbody2D;
+    private SoundManager soundManager;
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        health = FindObjectOfType<PlayerHealth>().GetComponent<HealthBarController>();
+        soundManager = FindObjectOfType<SoundManager>();
+    }
+
+    void Update()
+    {
+        if(health.value <= 0)
+        {
+
+        }
     }
 
     // Update is called once per frame
@@ -81,5 +94,13 @@ public class PlayerBehaviour : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundPoint.position, groundRadius);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            health.TakeDamage(20);
+        }
     }
 }

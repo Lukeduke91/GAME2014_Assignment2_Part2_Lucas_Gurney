@@ -15,12 +15,17 @@ using UnityEngine;
 public class DeathPlaneController : MonoBehaviour
 {
     public Transform playerSpawnPoint;
-
+    public HealthBarController health;
+    void Start()
+    {
+        health = FindObjectOfType<PlayerHealth>().GetComponent<HealthBarController>();
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.name == "Player")
         {
             ReSpawn(collision.gameObject);
+            health.TakeDamage(10);
         }
     }
 
