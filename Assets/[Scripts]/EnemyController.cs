@@ -6,9 +6,9 @@ using UnityEngine;
 /// EnemyController.cs
 /// Lucas Gurney
 /// 101313633
-/// December 11, 2022
+/// November 20, 2022
 /// Used for the enemy behaviour to move around
-/// Added killing the player
+/// Made the enemy behaviour
 /// </summary>
 
 public class EnemyController : MonoBehaviour

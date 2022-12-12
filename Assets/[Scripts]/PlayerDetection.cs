@@ -2,6 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// PlayerDetection.cs
+/// Lucas Gurney
+/// 101313633
+/// December 11, 2022
+/// Used for the players detection to find the player
+/// Added Detection
+/// </summary>
+
 public class PlayerDetection : MonoBehaviour
 {
     [Header("Sensing Suite")]
