@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 /// DeathPlaneController.cs
 /// Lucas Gurney
 /// 101313633
-/// November 19, 2022
-/// Used when the player falls off the level
-/// Made the Death Plane
+/// December 11, 2022
+/// Made to bring player back to the play area
+/// Added Game over transition
 /// </summary>
 
 [System.Serializable]

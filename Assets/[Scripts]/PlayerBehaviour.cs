@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 /// 101313633
 /// December 11, 2022
 /// Used for the players behaviour to move around
-/// Made the player behaviour
+/// Added Health
 /// </summary>
 
 public class PlayerBehaviour : MonoBehaviour

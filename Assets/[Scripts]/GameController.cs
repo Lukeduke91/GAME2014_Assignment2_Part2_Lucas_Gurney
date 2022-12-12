@@ -2,6 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// GameController.cs
+/// Lucas Gurney
+/// 101313633
+/// December 11, 2022
+/// Used to test damage
+/// Made Game controller to test damage
+/// </summary>
+
 public class GameController : MonoBehaviour
 {
     //public GameObject onScreenControls;

@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// SoundManager.cs
+/// Lucas Gurney
+/// 101313633
+/// December 11, 2022
+/// Used to produce sounds like Sound Fx and music
+/// Added Music
+/// </summary>
+
 [System.Serializable]
 public class SoundManager : MonoBehaviour
 {
